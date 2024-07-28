@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Library Management System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>Library Management System</h1>
+
+    <div>
+        <h2>Add Book</h2>
+        <form id="addBookForm">
+            <label>Title:</label>
+            <input type="text" id="title" required>
+            <label>Author:</label>
+            <input type="text" id="author" required>
+            <label>ISBN:</label>
+            <input type="text" id="isbn" required>
+            <label>Published Date:</label>
+            <input type="date" id="published_date" required>
+            <label>Available:</label>
+            <input type="checkbox" id="available" checked>
+            <button type="submit">Add Book</button>
+        </form>
+    </div>
+
+    <div>
+        <h2>Books List</h2>
+        <table id="booksTable">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th>Published Date</th>
+                    <th>Available</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Books will be populated here -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
